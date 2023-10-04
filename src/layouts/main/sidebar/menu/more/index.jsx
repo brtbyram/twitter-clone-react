@@ -47,13 +47,16 @@ export default function More() {
                         Para kazanma
                     </div>
                 </button>
+
+                <div className="h-px bg-[#2f3336] my-0.5 w-[89%] mx-auto"/>
+
                 <Disclosure>
                     {({ open }) => (
                         <>
                             <Disclosure.Button className="h-[52px] w-full flex items-center justify-between px-4 font-bold transition-colors hover:bg-[#eff3f41a] ">
                                 İçerik Üreticisi Stüdyosu
                                 <svg className={classNames("h-[1.172rem]", {
-                                    "rotate-180 text-[color:var(--color-primary)]": open
+                                    "rotate-180 text-[#1d9bf0]": open
                                 })} viewBox="0 0 24 24">
                                     <path
                                         fill="currentColor"
@@ -83,7 +86,7 @@ export default function More() {
                             <Disclosure.Button className="h-[52px] w-full flex items-center justify-between px-4 font-bold transition-colors hover:bg-[#eff3f41a] ">
                                 Proffesyonel Araçlar
                                 <svg className={classNames("h-[1.172rem]", {
-                                    "rotate-180 text-[color:var(--color-primary)]": open
+                                    "rotate-180 text-[#1d9bf0]": open
                                 })} viewBox="0 0 24 24">
                                     <path
                                         fill="currentColor"
@@ -113,7 +116,7 @@ export default function More() {
                             <Disclosure.Button className="h-[52px] w-full flex items-center justify-between px-4 font-bold transition-colors hover:bg-[#eff3f41a] ">
                                 Ayarlar ve Destek
                                 <svg className={classNames("h-[1.172rem]", {
-                                    "rotate-180 text-[color:var(--color-primary)]": open
+                                    "rotate-180 text-[#1d9bf0]": open
                                 })} viewBox="0 0 24 24">
                                     <path
                                         fill="currentColor"

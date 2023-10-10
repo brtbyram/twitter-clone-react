@@ -12,12 +12,12 @@ export default function Search() {
     })
 
     return (
-        <div ref={ref} className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 bg-black z-10">
-            <label className="h-[43px] rounded-full bg-[#202327] w-full relative group border border-transparent focus-within:bg-black focus-within:border-[#1d9bf0]">
+        <div ref={ref} className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 bg-[color:var(--background-primary)] z-10">
+            <label className="h-[43px] rounded-full bg-[color:var(--background-third)] w-full relative group border border-transparent focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]">
                 <div className="w-[56px] h-full flex items-center justify-center absolute top-0 left-0 pointer-events-none">
                     <svg
                         viewBox="0 0 24 24"
-                        className="h-[1.172rem] min-w-[2rem] text-[#71767b]"
+                        className="h-[1.172rem] min-w-[2rem] text-[color:var(--color-base-secondary)] group-focus-within:text-[color:var(--color-primary)]"
                     >
                         <path
                             fill="currentColor"
@@ -31,9 +31,9 @@ export default function Search() {
                     value={query}
                     onFocus={() => setFocus(true)}
                     onChange={e => setQuery(e.target.value)}
-                    className="w-full h-full bg-transparent rounded-full placeholder-[#71767b] outline-none pl-[56px] text-[15px] pr-9" />
+                    className="w-full h-full bg-transparent rounded-full placeholder-[color:var(--color-base-secondary)] outline-none pl-[56px] text-[15px] pr-9" />
                 {(query && focus) && (
-                    <button type="button" onClick={() => setQuery('')} className="w-[22px] h-[22px] rounded-full flex items-center justify-center text-black bg-[#1d9bf0] absolute top-1/2 -translate-y-1/2 right-3">
+                    <button type="button" onClick={() => setQuery('')} className="w-[22px] h-[22px] rounded-full flex items-center justify-center text-black bg-[color:var(--color-primary)] absolute top-1/2 -translate-y-1/2 right-3">
                         <svg viewBox="0 0 15 15" width={10} height={10}>
                             <path
                                 fill="currentColor"
@@ -44,8 +44,8 @@ export default function Search() {
                 )}
             </label>
             {focus && (
-                <div className="absolute top-full -translate-y-1 w-[350px] bg-black shadow-box max-h-[calc(80vh-53px)] text-center rounded-lg min-h-[100px]">
-                    <p className="p-3 pt-5 text-[#71767b] leading-5">
+                <div className="absolute top-full -translate-y-1 w-[350px] bg-[color:var(--background-primary)] shadow-box max-h-[calc(80vh-53px)] text-center rounded-lg min-h-[100px]">
+                    <p className="p-3 pt-5 text-[color:var(--color-base-secondary)] leading-5">
                         Kişileri, listeleri veya anahtar kelimeleri aramayı dene
                     </p>
                 </div>

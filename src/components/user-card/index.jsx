@@ -9,10 +9,10 @@ export default function UserCard({ user }) {
         <button className="py-3 px-4 flex items-center gap-3 transition-colors hover:bg-white/[0.03]">
             <img src={user.avatar} className="w-10 h-10 rounded-full object-cover" alt="" />
             <div className="flex flex-1 flex-col text-left">
-                <div className="text-[15px] text-[#e7e9ea] leading-7 font-bold">
+                <div className="text-[15px] leading-7 font-bold">
                     {user.fullName}
                 </div>
-                <div className="text-[15px] text-[#71767b] ">@{user.username}</div>
+                <div className="text-[15px] text-[color:var(--color-base-secondary)] ">@{user.username}</div>
             </div>
             <div>
                 {following ? (

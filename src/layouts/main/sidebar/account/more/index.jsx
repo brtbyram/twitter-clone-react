@@ -23,7 +23,7 @@ export default function More({close}) {
                     <img src={account.avatar} className="w-10 h-10 rounded-full" alt="" />
                     <div className="mx-3 flex-1 text-[15px]">
                         <h6 className="font-bold leading-[20px]">{account.fullName}</h6>
-                        <div className="text-[#71767b] ">@{account.userName}</div>
+                        <div className="text-[color:var(--color-base-secondary)] ">@{account.userName}</div>
                     </div>
                     {currentAccount.id === account.id && (
                         <svg viewBox="0 0 24 24" className="mr-2 ml-3" width={18.75} height={18.75} fill="#00ba7c">
@@ -35,13 +35,13 @@ export default function More({close}) {
                 </button>
             ))}
             <div className="h-px bg-[#2f3336] my-3" />
-            <button className="py-3 px-4 text-left transition-colors w-full hover:bg-[#eff3f41a] text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+            <button className="py-3 px-4 text-left transition-colors w-full hover:bg-[#eff3f41a] text-[15px] font-bold leading-[20px]">
                 Var olan bir hesap ekle
             </button>
-            <button className="py-3 px-4 text-left transition-colors w-full hover:bg-[#eff3f41a] text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+            <button className="py-3 px-4 text-left transition-colors w-full hover:bg-[#eff3f41a] text-[15px] font-bold leading-[20px]">
                 Hesapları yönet
             </button>
-            <button className="py-3 px-4 text-left transition-colors w-full hover:bg-[#eff3f41a] text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+            <button className="py-3 px-4 text-left transition-colors w-full hover:bg-[#eff3f41a] text-[15px] font-bold leading-[20px]">
                 <div className="">
                     @brtbyram hesabından çıkış yap
                 </div>

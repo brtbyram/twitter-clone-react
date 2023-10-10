@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="mb-4 px-4 flex flex-wrap gap-2">
-            <Link to="/" className="text-[#71767b] leadng-4 text-[13px] hover:underline">Hizmet şartları</Link>
-            <Link to="/" className="text-[#71767b] leadng-4 text-[13px] hover:underline">Gizlilik Politikası</Link>
-            <Link to="/" className="text-[#71767b] leadng-4 text-[13px] hover:underline">Çerez Politikası</Link>
-            <Link to="/" className="text-[#71767b] leadng-4 text-[13px] hover:underline">Imprint</Link>
-            <Link to="/" className="text-[#71767b] leadng-4 text-[13px] hover:underline">Erişilebilirlik</Link>
-            <Link to="/" className="text-[#71767b] leadng-4 text-[13px] hover:underline">Reklam bilgisi</Link>
+            <Link to="/" className="text-[color:var(--color-base-secondary)] leadng-4 text-[13px] hover:underline">Hizmet şartları</Link>
+            <Link to="/" className="text-[color:var(--color-base-secondary)] leadng-4 text-[13px] hover:underline">Gizlilik Politikası</Link>
+            <Link to="/" className="text-[color:var(--color-base-secondary)] leadng-4 text-[13px] hover:underline">Çerez Politikası</Link>
+            <Link to="/" className="text-[color:var(--color-base-secondary)] leadng-4 text-[13px] hover:underline">Imprint</Link>
+            <Link to="/" className="text-[color:var(--color-base-secondary)] leadng-4 text-[13px] hover:underline">Erişilebilirlik</Link>
+            <Link to="/" className="text-[color:var(--color-base-secondary)] leadng-4 text-[13px] hover:underline">Reklam bilgisi</Link>
             <div className="w-full flex gap-2">
                 <Popover className="relative inline-flex leading-4">
-                    <Popover.Button className="text-[#71767b] outline-none leadng-4 text-[13px] hover:underline inline-flex items-center ">
+                    <Popover.Button className="text-[color:var(--color-base-secondary)] outline-none leadng-4 text-[13px] hover:underline inline-flex items-center ">
                         Daha fazla
                         <svg viewBox="0 0 24 24" className="h-[1em] px-0.5">
                             <path
@@ -21,22 +21,22 @@ export default function Footer() {
                             />
                         </svg>
                     </Popover.Button>
-                    <Popover.Panel className="absolute w-[150px] max-w-[384px] rounded-xl bg-black shadow-box bottom-0 right-0 grid overflow-hidden">
-                        <Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[#16181c] transition-colors">
+                    <Popover.Panel className="absolute w-[150px] max-w-[384px] rounded-xl bg-[color:var(--background-primary)] shadow-box bottom-0 right-0 grid overflow-hidden">
+                        <Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors">
                         Hakkında
                         </Link>
-                        <Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[#16181c] transition-colors">
+                        <Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors">
 							Durum
 						</Link>
-						<Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[#16181c] transition-colors">
+						<Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors">
 							İşletmeler İçin X
 						</Link>
-						<Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[#16181c] transition-colors">
+						<Link to="/" className="py-3 px-4 leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors">
 							Geliştiriciler
 						</Link>
                     </Popover.Panel>
                 </Popover>
-                <p className="text-[13px] text-[#71767b] leading-4">
+                <p className="text-[13px] text-[color:var(--color-base-secondary)] leading-4">
 					&copy; 2023 brtbyram
 				</p>
             </div>
